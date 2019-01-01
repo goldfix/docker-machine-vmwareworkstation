@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.1
+IMPROVEMENTS:
+* Update `.vmx` file to VmWare 15
+* Removed option: `--vmwareworkstation-share-compat`
+
 ## 2.0.0
 IMPROVEMENTS:
 * Update github.com/docker/machine to `0.14.0`

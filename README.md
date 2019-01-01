@@ -1,7 +1,7 @@
 # Docker Machine VMware Workstation Driver
 
-[![Join the chat at https://gitter.im/pecigonzalo/docker-machine-vmwareworkstation](https://badges.gitter.im/pecigonzalo/docker-machine-vmwareworkstation.svg)](https://gitter.im/pecigonzalo/docker-machine-vmwareworkstation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/k8j7ej2a7t58p2r0/branch/master?svg=true)](https://ci.appveyor.com/project/pecigonzalo/docker-machine-vmwareworkstation)
+<!-- [![Join the chat at https://gitter.im/pecigonzalo/docker-machine-vmwareworkstation](https://badges.gitter.im/pecigonzalo/docker-machine-vmwareworkstation.svg)](https://gitter.im/pecigonzalo/docker-machine-vmwareworkstation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Windows Build Status](https://ci.appveyor.com/api/projects/status/k8j7ej2a7t58p2r0/branch/master?svg=true)](https://ci.appveyor.com/project/pecigonzalo/docker-machine-vmwareworkstation) -->
 
 This plugin for [Docker Machine](https://docs.docker.com/machine/) creates
 Docker hosts locally on a [VMware
@@ -187,7 +187,6 @@ Environment variables and default values:
 | `--vmwareworkstation-ssh-password`    | `WORKSTATION_SSH_PASSWORD`    | `tcuser`                 |
 | `--vmwareworkstation-no-share`        | `WORKSTATION_NO_SHARE`        | `false`                  |
 | `--vmwareworkstation-share-folder`    | `WORKSTATION_SHARE_FOLDER`    | Linux: `/home` Windows: `C:\Users\` |
-| `--vmwareworkstation-share-compat`    | `WORKSTATION_SHARE_COMPAT`    | Windows: `/c/Users` |
 
 ## Development
 
@@ -219,6 +218,7 @@ The build creates the binary as `bin/docker-machine-driver-vmwareworkstation`. I
 ## Authors
 
 * Gonzalo Peci ([@pecigonzalo](https://github.com/pecigonzalo))
+* Pietro Partescano ([@goldfix](https://github.com/goldfix))
 
 ## Credits
 
