@@ -148,7 +148,7 @@ To create a VMware Workstation based Docker machine, just run this
 command:
 
 ```bash
-$ docker-machine create --driver=vmwareworkstation dev
+$ docker-machine create --driver=vmwareworkstation --vmwareworkstation-boot2docker-url https://github.com/boot2docker/boot2docker/releases/download/v18.09.1-rc1/boot2docker.iso default
 ```
 
 ## Options

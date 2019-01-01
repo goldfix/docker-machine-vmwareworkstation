@@ -4,6 +4,11 @@
 IMPROVEMENTS:
 * Update `.vmx` file to VmWare 15
 * Removed option: `--vmwareworkstation-share-compat`
+* Default vm setting changed to:
+  * memory: 4GB
+  * CPU: 2
+  * Size Virtual Disk: 40GB
+* Using iso [boot2docker v18.09.1-rc1](https://github.com/boot2docker/boot2docker/releases/tag/v18.09.1-rc1)
 
 ## 2.0.0
 IMPROVEMENTS:
