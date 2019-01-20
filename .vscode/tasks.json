@@ -1,0 +1,68 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "options": {
+                "env": {
+                    "GOPATH": "${workspaceFolder}\\..\\build",
+                    "GOOS": "windows",
+                    "GOARCH": "amd64",
+                },
+            },
+            "label": "build",
+            "type": "shell",
+            "command": "go",
+            "args": [
+                {
+                    "value": "build",
+                    "quoting": "escape"
+                },
+                {
+                    "value": "-i",
+                    "quoting": "escape"
+                },
+                {
+                    "quoting": "escape",
+                    "value": "-o %GOPATH%/bin/docker-machine-driver-vmwareworkstation.exe"
+                },
+                {
+                    "value": "./cmd/...",
+                    "quoting": "escape"
+                },
+            ]
+        },
+        {
+            "label": "win",
+            "type": "shell",
+            "command": [
+                "echo",
+                "${workspaceFolder}\\..\\build"
+            ]
+        },
+        {
+            "label": "env",
+            "command": {
+                "value": [
+                    "go"
+                ],
+                "quoting": "escape"
+            },
+            "args": [
+                "env"
+            ]
+        },
+        {
+            "label": "get",
+            "command": [
+                "go"
+            ],
+            "args": [
+                "get",
+                "-d",
+                "./cmd/..."
+            ]
+        }
+    ]
+}
