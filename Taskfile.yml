@@ -3,11 +3,11 @@
 version: '2'
 
 vars:
-  GREETING: Hello, World!
+  VER: V1
 
 tasks:
-  default:
+  get:
     cmds:
-      - echo "{{.GREETING}}"
-    silent: true
-    desc: Build the go binary.
+      - go
+    silent: false
+    desc: "Downloads the packages. Ver.:"

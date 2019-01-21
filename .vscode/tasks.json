@@ -4,9 +4,14 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "test",
+            "type": "shell",
+            "command": "go",
+            "args": ["test", "./..."]
+        },
+        {
             "options": {
                 "env": {
-                    "GOPATH": "${workspaceFolder}\\..\\build",
                     "GOOS": "windows",
                     "GOARCH": "amd64",
                 },
@@ -34,14 +39,12 @@
             ]
         },
         {
-            "label": "win",
-            "type": "shell",
-            "command": [
-                "echo",
-                "${workspaceFolder}\\..\\build"
-            ]
-        },
-        {
+            "options": {
+                "env": {
+                    "GOOS": "windows",
+                    "GOARCH": "amd64",
+                },
+            },
             "label": "env",
             "command": {
                 "value": [
@@ -54,6 +57,13 @@
             ]
         },
         {
+            "type": "shell",
+            "options": {
+                "env": {
+                    "GOOS": "windows",
+                    "GOARCH": "amd64",
+                },
+            },
             "label": "get",
             "command": [
                 "go"
@@ -61,8 +71,9 @@
             "args": [
                 "get",
                 "-d",
-                "./cmd/..."
+                "-t",
+                "./..."
             ]
-        }
+        },
     ]
 }
