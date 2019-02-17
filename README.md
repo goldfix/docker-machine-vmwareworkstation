@@ -38,7 +38,7 @@ listed on the TODO list. Suggestions and contributions are welcome.
 
 The latest version of `docker-machine-driver-vmwareworkstation` binary is
 available on the
-["Releases"](https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases)
+["Releases"](https://github.com/goldfix/docker-machine-vmwareworkstation/releases)
 page.
 
 Place the executable in the directory containing `docker-machine.exe`, or else
