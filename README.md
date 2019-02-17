@@ -59,8 +59,18 @@ To create a VMware Workstation based Docker machine, just run this
 command:
 
 ```bash
-$ docker-machine create --driver=vmwareworkstation default
+docker-machine create --driver=vmwareworkstation default
+@FOR /f "tokens=*" %i IN ('docker-machine env default') DO @%i
+docker run hello-world
 ```
+
+or
+
+```bash
+docker run -it -v /c/Users/<Your Folder>:/test-folder/ ubuntu bash
+ll /test-folder/
+```
+
 
 ## Options
 
