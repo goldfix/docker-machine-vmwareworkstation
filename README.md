@@ -32,7 +32,7 @@ listed on the TODO list. Suggestions and contributions are welcome.
 
 * Windows 7+ (for now)
 * [Docker Machine](https://docs.docker.com/machine/) 0.5.0+
-* [VMware Workstation](https://www.vmware.com/products/workstation) Workstation Free/Pro 10 +
+* [VMware Workstation](https://www.vmware.com/products/workstation) Workstation Free/Pro 12+
 
 ## Installation
 
@@ -46,9 +46,11 @@ add it to your $PATH.
 
 ## Installing with Docker Toolbox
 
-1.  Install Docker Toolbox without VirtualBox
+Install Docker Toolbox without VirtualBox:
 
-    `DockerToolbox-.exe /COMPONENTS="Docker,DockerMachine"`
+```bash
+DockerToolbox-.exe /COMPONENTS="Docker,DockerMachine"`
+```
 
 ## Usage
 
