@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.2
+## v2.0.2
 
 IMPROVEMENTS:
 
@@ -12,7 +12,7 @@ IMPROVEMENTS:
   * removed [Dep](https://golang.github.io/dep/) and substituted with [Go-Modules](https://github.com/golang/go/wiki/Modules)
 * is possible use last version of [boot2docker](https://github.com/boot2docker/boot2docker/) ISO
 
-## 2.0.1
+## v2.0.1
 
 IMPROVEMENTS:
 
@@ -24,7 +24,7 @@ IMPROVEMENTS:
   * Size Virtual Disk: 40GB
 * Using iso [boot2docker v18.09.1-rc1](https://github.com/boot2docker/boot2docker/releases/tag/v18.09.1-rc1)
 
-## 2.0.0
+## v2.0.0
 
 IMPROVEMENTS:
 
@@ -32,7 +32,7 @@ IMPROVEMENTS:
 
 ---
 
-## 1.1.0
+## v1.1.0
 
 IMPROVEMENTS:
 
@@ -40,7 +40,7 @@ IMPROVEMENTS:
 * Updated testImport deps
 * Fixes #32 (Unable to complete build when .docker folder is on a symlink)
 
-## 1.0.10
+## v1.0.10
 
 IMPROVEMENTS:
 
@@ -48,7 +48,7 @@ IMPROVEMENTS:
 * Use glide for dependancy vendoring
 * Update documentation
 
-## 1.0.0
+## v1.0.0
 
 IMPROVEMENTS:
 
@@ -57,7 +57,7 @@ IMPROVEMENTS:
 
 Notes: Updated license files/notices
 
-## 0.9.0
+## v0.9.0
 
 IMPROVEMENTS:
 
@@ -65,6 +65,6 @@ IMPROVEMENTS:
 * Update files so it can BUILD against latest docker/machine
 * Mimic updates from docker/machine PR docker/machine#2732 and docker/machine#2721
 
-## 0.8.0 (2015-11-17)
+## v0.8.0 (2015-11-17)
 
 Initial public release
