@@ -5,9 +5,11 @@ go:
 before_install:
   - echo before_install
   - wget https://github.com/go-task/task/releases/download/v2.3.0/task_windows_amd64.zip
+  - cd
   - dir
 install:
-  - echo install
+  - 7z.exe e task_windows_amd64.zip
+  - rm task_windows_amd64.zip
 before_script:
   - echo before_script
 script:
