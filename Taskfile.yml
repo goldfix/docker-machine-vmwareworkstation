@@ -11,6 +11,11 @@ env:
   GO111MODULE: on  
 
 tasks:
+  go_mods:
+    desc: Download and verify external modules.
+    cmds:
+      - go mod download
+      - go mod verify
   envs:
     desc: View envs. variables.
     cmds:
@@ -20,6 +25,7 @@ tasks:
   default:
     desc: Execute test and build.
     cmds:
+      - task: go_mods
       - task: test
       - task: build
   test:
