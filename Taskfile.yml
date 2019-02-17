@@ -5,9 +5,32 @@ version: '2'
 vars:
   VER: V1
 
+env:
+  GOOS: windows
+  GOARCH: amd64
+  GO111MODULE: on  
+
 tasks:
-  get:
+  envs:
+    desc: View envs. variables.
     cmds:
-      - go
-    silent: false
-    desc: "Downloads the packages. Ver.:"
+      - echo GOOS = ${GOOS}
+      - echo GOARCH = ${GOARCH}
+      - echo GOPATH = ${GOPATH}
+  default:
+    desc: Execute test and build.
+    cmds:
+      - task: test
+      - task: build
+  test:
+    desc: Start tests.
+    cmds:
+      - go test
+  build:
+    desc: Start build.
+    cmds:
+      - go build -i -o ${GOPATH}/bin/docker-machine-driver-vmwareworkstation.exe ./cmd/
+  clean:
+    desc: Remove build and temporary files.
+    cmds:
+      - go clean -r -i -cache -testcache -modcache
