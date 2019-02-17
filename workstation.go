@@ -671,7 +671,7 @@ func mountSharedFolder(d *Driver) error {
 
 			// Create mountpoint and mount shared folder
 			commands := []string{
-				fmt.Sprintf("[ ! -d %q ] && sudo mkdir %q", d.GuestFolder, d.GuestFolder),
+				fmt.Sprintf("[ ! -d %q ] && sudo mkdir -p %q", d.GuestFolder, d.GuestFolder),
 				fmt.Sprintf(
 					"[ -f /usr/local/bin/vmhgfs-fuse ] && "+
 						"sudo /usr/local/bin/vmhgfs-fuse -o allow_other .host:/%v %q"+
