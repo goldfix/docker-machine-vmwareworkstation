@@ -4,14 +4,13 @@ go:
   - 1.11.x
 before_install:
   - echo before_install
-  - wget https://github.com/go-task/task/releases/download/v2.3.0/task_windows_amd64.zip
+  - curl -s https://taskfile.org/install.sh | sh
   - pwd
   - ls -la --time-style=long-iso --group-directories-first --color
 install:
-  - 7z.exe e task_windows_amd64.zip
-  - rm task_windows_amd64.zip
+  - echo before_install
 before_script:
-  - echo before_script
+  - ls -la --time-style=long-iso --group-directories-first --color
 script:
   - echo script
 after_success:
