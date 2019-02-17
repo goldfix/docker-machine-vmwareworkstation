@@ -190,8 +190,8 @@ func (d *Driver) SetConfigFromFlags(flags drivers.DriverOptions) error {
 		d.GuestFolder = "/Users"
 	case "windows":
 		d.ShareName = "Users"
-		d.ShareFolder = `C:\`
-		d.GuestFolder = "/c"
+		d.ShareFolder = `C:\Users\`
+		d.GuestFolder = "/c/Users"
 	}
 
 	if flags.String("vmwareworkstation-share-folder") != "" {
