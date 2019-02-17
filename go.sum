@@ -13,6 +13,8 @@ github.com/docker/machine v0.14.0 h1:7zMwMAz0XbL27Q4NPqtW7I0wuhOaGFpq5WfvrUfZROM
 github.com/docker/machine v0.14.0/go.mod h1:I8mPNDeK1uH+JTcUU7X0ZW8KiYz0jyAgNaeSJ1rCfDI=
 github.com/docker/machine v0.16.1 h1:zrgroZounGVkxLmBqMyc1uT2GgapXVjIWHCfBf0udrA=
 github.com/docker/machine v0.16.1/go.mod h1:I8mPNDeK1uH+JTcUU7X0ZW8KiYz0jyAgNaeSJ1rCfDI=
+github.com/goldfix/docker-machine-vmwareworkstation v1.1.1-0.20190217103556-b28dc6612d21/go.mod h1:TIxMyi2yJ1zlPxNMfQxT31oIHJYCyTPhEiKZ92ACwEU=
+github.com/goldfix/go-remove-file v0.0.0-20180518193604-abde2995c1cf/go.mod h1:BlP104c6J/XDN66L2F/eD4Q/TXycpHJwusika7N35aE=
 github.com/konsorten/go-windows-terminal-sequences v1.0.1 h1:mweAR1A6xJ3oS2pRaGiHgQ4OO8tzTaLawm8vnODuwDk=
 github.com/konsorten/go-windows-terminal-sequences v1.0.1/go.mod h1:T0+1ngSBFLxvqU3pZ+m/2kptfBszLMUkC4ZK/EgS/cQ=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=

@@ -12,8 +12,7 @@
         {
             "options": {
                 "env": {
-                    "GOOS": "windows",
-                    "GOARCH": "amd64",
+                    "GO111MODULE": "on",
                 },
             },
             "label": "build",
@@ -30,10 +29,14 @@
                 },
                 {
                     "quoting": "escape",
-                    "value": "-o %GOPATH%/bin/docker-machine-driver-vmwareworkstation.exe"
+                    "value": "-o"
                 },
                 {
-                    "value": "./cmd/...",
+                    "quoting": "escape",
+                    "value": "${env:GOPATH}/bin/docker-machine-driver-vmwareworkstation.exe"
+                },
+                {
+                    "value": "./cmd",
                     "quoting": "escape"
                 },
             ]
@@ -41,8 +44,7 @@
         {
             "options": {
                 "env": {
-                    "GOOS": "windows",
-                    "GOARCH": "amd64",
+                    "GO111MODULE": "on",
                 },
             },
             "label": "env",
@@ -60,8 +62,7 @@
             "type": "shell",
             "options": {
                 "env": {
-                    "GOOS": "windows",
-                    "GOARCH": "amd64",
+                    "GO111MODULE": "on",
                 },
             },
             "label": "get",
