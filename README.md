@@ -49,7 +49,7 @@ add it to your $PATH.
 Install Docker Toolbox without VirtualBox:
 
 ```bash
-DockerToolbox-.exe /COMPONENTS="Docker,DockerMachine"`
+DockerToolbox-.exe /COMPONENTS="Docker,DockerMachine"
 ```
 
 ## Usage
